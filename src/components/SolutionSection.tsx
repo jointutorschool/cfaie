@@ -1,4 +1,4 @@
-import { Lightbulb, Check, Fingerprint, Wifi } from "lucide-react";
+import { Lightbulb, Check, Fingerprint } from "lucide-react";
 
 const SolutionSection = () => {
   const features = [
@@ -24,7 +24,7 @@ const SolutionSection = () => {
             {/* Floating card */}
             <div className="absolute -top-4 -right-4 md:top-4 md:right-[-60px] bg-card rounded-xl p-4 shadow-elevated border border-border/50">
               <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-3">
-                <Wifi className="w-6 h-6 text-primary-foreground" />
+                <Fingerprint className="w-6 h-6 text-primary-foreground" />
               </div>
               <h4 className="font-heading font-bold text-foreground text-sm">Unique Learning DNA</h4>
               <p className="text-xs text-muted-foreground">Every learner is different</p>
