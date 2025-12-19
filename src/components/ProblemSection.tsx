@@ -22,14 +22,13 @@ const ProblemSection = () => {
             </h2>
             
             <div className="space-y-3 text-lg text-muted-foreground">
-              <p>Every child is taught differently.</p>
-              <p>Every teacher teaches differently.</p>
-              <p>Yet education still treats everyone the same.</p>
+              <p>Every student learns differently.</p>
+              <p>Yet the world still teaches everyone the same.</p>
             </div>
             
             <div className="bg-card rounded-2xl p-6 shadow-card border border-border/50">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-                Resulting Issues
+                The result?
               </h3>
               <ul className="space-y-4">
                 {issues.map((issue, index) => (
