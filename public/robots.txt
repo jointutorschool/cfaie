@@ -30,4 +30,4 @@ User-agent: *
 Disallow: /
 Crawl-delay: 120
 Disallow: /cgi-bin/
-Sitemap: https://cognitivefingerprintai.com
+Sitemap: https://vygot.io
