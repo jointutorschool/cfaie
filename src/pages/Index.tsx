@@ -1,11 +1,14 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
-import WhatSetsUsApart from "@/components/WhatSetsUsApart";
-import HowItWorks from "@/components/HowItWorks";
-import ImpactSection from "@/components/ImpactSection";
-import ApplicationsSection from "@/components/ApplicationsSection";
+import UniqueLearningSection from "@/components/UniqueLearningSection";
+import WhatIsVygotSection from "@/components/WhatIsVygotSection";
+import HowVygotThinksSection from "@/components/HowVygotThinksSection";
+import MatchingSection from "@/components/MatchingSection";
+import TutorSchoolSection from "@/components/TutorSchoolSection";
+import BeyondTutoringSection from "@/components/BeyondTutoringSection";
+import EcosystemSection from "@/components/EcosystemSection";
+import WhyDifferentSection from "@/components/WhyDifferentSection";
 import VisionSection from "@/components/VisionSection";
 import Footer from "@/components/Footer";
 
@@ -15,11 +18,16 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <ProblemSection />
-      <SolutionSection />
-      <WhatSetsUsApart />
-      <HowItWorks />
-      <ImpactSection />
-      <ApplicationsSection />
+      <UniqueLearningSection />
+      <WhatIsVygotSection />
+      <HowVygotThinksSection />
+      <MatchingSection />
+      <TutorSchoolSection />
+      <BeyondTutoringSection />
+      <section id="for-whom">
+        <EcosystemSection />
+      </section>
+      <WhyDifferentSection />
       <VisionSection />
       <Footer />
     </main>
