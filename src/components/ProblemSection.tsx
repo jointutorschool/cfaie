@@ -1,64 +1,47 @@
-import { AlertCircle, XCircle } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 
 const ProblemSection = () => {
   const issues = [
-    "Endless trial-and-error with tutors",
-    "Slow progress despite effort",
-    "No visibility into why learning works—or doesn't"
+    "Teaching styles vary widely",
+    "Learning patterns are deeply individual",
+    "Assessments are static and shallow",
+    "Learning gaps grow silently"
   ];
 
   return (
     <section id="problem" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-coral-light border border-coral/20">
-              <AlertCircle className="w-4 h-4 text-coral" />
-              <span className="text-sm font-medium text-coral">The Problem</span>
-            </div>
-            
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground leading-tight">
-              Why Learning Fails Today
-            </h2>
-            
-            <div className="space-y-3 text-lg text-muted-foreground">
-              <p>Every student learns differently.</p>
-              <p>Yet the world still teaches everyone the same.</p>
-            </div>
-            
-            <div className="bg-card rounded-2xl p-6 shadow-card border border-border/50">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-                The result?
-              </h3>
-              <ul className="space-y-4">
-                {issues.map((issue, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <XCircle className="w-5 h-5 text-coral mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">{issue}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-coral-light border border-coral/20 mb-8">
+            <AlertCircle className="w-4 h-4 text-coral" />
+            <span className="text-sm font-medium text-coral">The Problem</span>
           </div>
           
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-elevated">
-              <img 
-                src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxzdHVkZW50cyUyMGxlYXJuaW5nfGVufDB8fHx8MTc2NjA2NDAxMHww&ixlib=rb-4.1.0&q=85&w=800"
-                alt="Students learning together"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            
-            {/* Stat card overlay */}
-            <div className="absolute -bottom-6 -left-6 bg-card rounded-xl p-6 shadow-elevated border border-border/50">
-              <span className="stat-highlight">70%</span>
-              <p className="text-sm text-muted-foreground mt-1">
-                of students struggle with<br />
-                mismatched teaching styles
-              </p>
-            </div>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-8 leading-tight">
+            Why One-Size-Fits-All Education Doesn't Work
+          </h2>
+          
+          <p className="text-xl text-muted-foreground mb-12">
+            Every student learns differently. Yet the world still teaches everyone the same.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {issues.map((issue, index) => (
+              <div 
+                key={index} 
+                className="bg-card rounded-xl p-6 shadow-card border border-border/50 text-left"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral flex-shrink-0" />
+                  <span className="text-foreground font-medium">{issue}</span>
+                </div>
+              </div>
+            ))}
           </div>
+          
+          <p className="text-lg text-muted-foreground">
+            Most platforms personalise content. <span className="text-foreground font-medium">Very few understand the human interaction where learning actually happens.</span>
+          </p>
         </div>
       </div>
     </section>
