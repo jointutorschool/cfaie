@@ -20,7 +20,7 @@ const WhatIsVygotSection = () => {
             </p>
             
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Inspired by learning science and neuroscience of learning, it is a <span className="text-foreground font-semibold">bi-directional intelligence system</span> that continuously learns from real educational interactions.
+              Inspired by cognitive science and neuroscience of learning, it is a <span className="text-foreground font-semibold">bi-directional intelligence system</span> that continuously learns from real educational interactions.
             </p>
           </div>
           
