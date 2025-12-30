@@ -3,9 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const TutorSchoolSection = () => {
   const features = [
-    "Find the right tutor faster",
-    "See real learning progress",
-    "Avoid repeated trial-and-error"
+    "Find the right tutor faster—based on learning and teaching fit, not guesswork",
+    "See real learning progress through transparent, data-driven insights",
+    "Benefit from adaptive learning paths that adjust content depth, difficulty, and pace",
+    "Receive early risk signals through predictive analytics before learning gaps widen",
+    "Access customised assessments that reveal strengths, weaknesses, and mastery gaps"
   ];
 
   return (
@@ -30,8 +32,8 @@ const TutorSchoolSection = () => {
           <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 mb-8">
             <ul className="space-y-4 mb-8">
               {features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-4">
-                  <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                <li key={index} className="flex items-start gap-4">
+                  <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-4 h-4 text-primary-foreground" />
                   </div>
                   <span className="text-lg text-foreground">{feature}</span>
@@ -39,8 +41,12 @@ const TutorSchoolSection = () => {
               ))}
             </ul>
             
+            <p className="text-muted-foreground mb-6">
+              Once a learner–teacher match is established, VYGOT™ continuously refines the experience by recommending personalised learning pathways—aligning instruction, pacing, and remediation to the learner's Unique Learning DNA.
+            </p>
+            
             <p className="text-muted-foreground text-center">
-              VYGOT™ works quietly in the background, improving matching accuracy with every real learning interaction.
+              VYGOT™ operates quietly in the background, using outcome-based intelligence loops to improve matching accuracy and learning effectiveness with every real interaction.
             </p>
           </div>
           
