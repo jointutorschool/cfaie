@@ -25,11 +25,15 @@ const ProblemSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-8 leading-tight">
-            Why One-Size-Fits-All<br />Education Doesn't Work
+            Education Still Runs on Averages
           </h2>
           
-          <p className="text-xl text-muted-foreground mb-12">
-            Every student learns differently. <span className="text-foreground font-semibold">Yet the world still teaches everyone the same.</span>
+          <p className="text-xl text-muted-foreground mb-4">
+            Learners learn differently. Instruction varies widely. <span className="text-foreground font-semibold">Yet most education systems are built around standardisation.</span>
+          </p>
+          
+          <p className="text-lg text-muted-foreground mb-12">
+            Assessment scores capture outcomes—but not how learning happens.
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
@@ -45,7 +49,7 @@ const ProblemSection = () => {
           </div>
           
           <p className="text-lg text-muted-foreground">
-            Most platforms personalise content. <span className="text-foreground font-semibold">Very few understand the human interaction where learning actually happens.</span>
+            As a result, personalisation remains shallow and reactive, <span className="text-foreground font-semibold">optimising content rather than learning itself.</span>
           </p>
         </div>
       </div>

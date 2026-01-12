@@ -16,24 +16,23 @@ const WhatIsVygotSection = () => {
             </h2>
             
             <p className="text-xl text-muted-foreground mb-4 max-w-3xl mx-auto">
-              VYGOT™ is the proprietary engine behind Unique Learning Fingerprint.
+              VYGOT™ is an API-first learning intelligence engine inspired by learning science and the neuroscience of learning.
             </p>
             
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Inspired by cognitive science and neuroscience of learning, it is a <span className="text-foreground font-semibold">bi-directional intelligence system</span> that continuously learns from real educational interactions.
+              Rather than optimising content delivery, VYGOT operates at the <span className="text-foreground font-semibold">decision layer</span>—modelling learning as a dynamic relationship between learner and instruction, continuously refined through real educational interactions.
             </p>
           </div>
           
           {/* Bi-directional visual */}
           <div className="relative bg-card rounded-2xl p-8 md:p-12 shadow-card border border-border/50">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-              {/* Teacher */}
+              {/* Learner */}
               <div className="text-center">
                 <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <User className="w-12 h-12 text-primary" />
+                  <GraduationCap className="w-12 h-12 text-primary" />
                 </div>
-                <h3 className="text-xl font-heading font-bold text-foreground">Teacher</h3>
-                <p className="text-sm text-muted-foreground mt-1">Teaching Pattern</p>
+                <h3 className="text-xl font-heading font-bold text-foreground">Learner</h3>
               </div>
               
               {/* Arrow */}
@@ -41,19 +40,14 @@ const WhatIsVygotSection = () => {
                 <ArrowLeftRight className="w-10 h-10 text-primary" />
               </div>
               
-              {/* Learner */}
+              {/* Instruction */}
               <div className="text-center">
                 <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <GraduationCap className="w-12 h-12 text-primary" />
+                  <User className="w-12 h-12 text-primary" />
                 </div>
-                <h3 className="text-xl font-heading font-bold text-foreground">Learner</h3>
-                <p className="text-sm text-muted-foreground mt-1">Learning Fingerprint</p>
+                <h3 className="text-xl font-heading font-bold text-foreground">Instruction</h3>
               </div>
             </div>
-            
-            <p className="text-center text-muted-foreground mt-8 pt-8 border-t border-border/50">
-              VYGOT™ models learning as a <span className="text-foreground font-medium">relationship</span>—not just content consumption or test performance.
-            </p>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
-import { Globe, Heart, ExternalLink, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Globe, Heart } from "lucide-react";
 
 const VisionSection = () => {
   return (
@@ -16,30 +15,8 @@ const VisionSection = () => {
           </h2>
           
           <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-12">
-            To build the <span className="text-white font-semibold">global learning interaction graph</span>—an intelligence layer that understands how humans learn together and enables truly personalised education at population scale.
+            To build the <span className="text-white font-semibold">learning intelligence AI infrastructure</span> that understands how humans learn together and enables outcome-driven education at scale across platforms and institutions.
           </p>
-          
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-teal-dark text-primary-foreground px-8 py-6 text-lg"
-            >
-              Experience VYGOT™ on TutorSchool
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="bg-transparent border-white/20 text-white hover:bg-white/10 px-8 py-6 text-lg"
-              asChild
-            >
-              <a href="mailto:rajeev@vygot.io">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Partner with Us
-              </a>
-            </Button>
-          </div>
           
           {/* Decorative element */}
           <div className="flex items-center justify-center gap-4">

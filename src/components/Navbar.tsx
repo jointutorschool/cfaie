@@ -8,7 +8,8 @@ const Navbar = () => {
   const navLinks = [
     { href: "#problem", label: "Problem" },
     { href: "#engine", label: "How It Works" },
-    { href: "#for-whom", label: "For Whom" },
+    { href: "#engine", label: "VYGOT™ Engine" },
+    { href: "#ecosystem", label: "For Whom" },
   ];
 
   const handleLinkClick = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a 
-              key={link.href}
+              key={link.href + link.label}
               href={link.href} 
               className="text-foreground/70 hover:text-foreground transition-colors"
             >
@@ -54,7 +55,7 @@ const Navbar = () => {
           <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
-                key={link.href}
+                key={link.href + link.label}
                 href={link.href}
                 className="text-foreground/70 hover:text-foreground transition-colors py-2 text-lg"
                 onClick={handleLinkClick}

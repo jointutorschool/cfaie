@@ -1,13 +1,13 @@
-import { Eye, MessageSquare, Shield, Heart, RefreshCw, ClipboardCheck } from "lucide-react";
+import { Eye, Gauge, Brain, RefreshCw, Target, MessageSquare } from "lucide-react";
 
 const HowVygotThinksSection = () => {
   const behaviors = [
-    { icon: MessageSquare, label: "Facilitation vs Instruction" },
-    { icon: RefreshCw, label: "Reflection–Action–Silence patterns" },
-    { icon: Shield, label: "Psychological safety" },
-    { icon: Heart, label: "Emotional climate" },
-    { icon: Eye, label: "Adaptability" },
-    { icon: ClipboardCheck, label: "Assessment philosophy" }
+    { icon: Gauge, label: "Pacing" },
+    { icon: Brain, label: "Cognitive load" },
+    { icon: RefreshCw, label: "Adaptability" },
+    { icon: Eye, label: "Reflection–action patterns" },
+    { icon: Target, label: "Instructional intent" },
+    { icon: MessageSquare, label: "Learning response" }
   ];
 
   return (
@@ -21,11 +21,11 @@ const HowVygotThinksSection = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-8">
-              How VYGOT™ Thinks
+              How the Engine Thinks
             </h2>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              VYGOT™ captures observable teaching and learning behaviors that most platforms ignore.
+              VYGOT™ captures instruction-level signals that most platforms overlook.
             </p>
           </div>
           
@@ -44,11 +44,8 @@ const HowVygotThinksSection = () => {
           </div>
           
           <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 text-center">
-            <p className="text-lg text-muted-foreground mb-4">
-              These signals form an evolving <span className="text-foreground font-semibold">Teacher Teaching Pattern</span>, paired with each learner's <span className="text-foreground font-semibold">Unique Learning Fingerprint</span>.
-            </p>
-            <p className="text-primary font-medium">
-              The result is a deeper understanding of why the same curriculum produces different outcomes.
+            <p className="text-lg text-muted-foreground">
+              These signals form evolving learner and instruction profiles—sometimes referred to as <span className="text-foreground font-semibold">Unique Learning DNA</span>—allowing systems to understand why the same curriculum produces different outcomes for different learners.
             </p>
           </div>
         </div>

@@ -1,10 +1,10 @@
-import { Compass, BookOpen, TrendingUp, Clock } from "lucide-react";
+import { Code, Key, Handshake } from "lucide-react";
 
-const BeyondTutoringSection = () => {
-  const paths = [
-    { icon: BookOpen, label: "Subject & course choices" },
-    { icon: TrendingUp, label: "Skill development pathways" },
-    { icon: Compass, label: "Academic & career directions" }
+const DeploymentSection = () => {
+  const deploymentOptions = [
+    { icon: Code, label: "API Integration" },
+    { icon: Key, label: "Licensing" },
+    { icon: Handshake, label: "Strategic Pilots" }
   ];
 
   return (
@@ -12,38 +12,33 @@ const BeyondTutoringSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted border border-border mb-8">
-              <Clock className="w-4 h-4 text-muted-foreground" />
-              <span className="text-sm font-medium text-muted-foreground">Roadmap</span>
-            </div>
-            
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-8">
-              Beyond Tutoring
+              How VYGOT Is Deployed
             </h2>
             
             <p className="text-xl text-muted-foreground mb-12">
-              As the intelligence layer matures, VYGOT™ will guide:
+              VYGOT is delivered via <span className="text-foreground font-semibold">APIs and licensing</span>, enabling platforms and institutions to embed learning intelligence directly into their existing systems.
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {paths.map((path, index) => (
+            {deploymentOptions.map((option, index) => (
               <div 
                 key={index} 
                 className="bg-card rounded-2xl p-6 shadow-card border border-border/50 text-center"
               >
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <path.icon className="w-7 h-7 text-primary" />
+                  <option.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-lg font-heading font-semibold text-foreground">
-                  {path.label}
+                  {option.label}
                 </h3>
               </div>
             ))}
           </div>
           
           <p className="text-center text-lg text-muted-foreground">
-            Based on how learners <span className="text-foreground font-medium">actually learn</span>, not just what they score.
+            Strategic pilots support outcome validation and integration, allowing partners to adopt learning intelligence <span className="text-foreground font-medium">without rebuilding core infrastructure</span>.
           </p>
         </div>
       </div>
@@ -51,4 +46,4 @@ const BeyondTutoringSection = () => {
   );
 };
 
-export default BeyondTutoringSection;
+export default DeploymentSection;
