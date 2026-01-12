@@ -1,4 +1,5 @@
-import { Globe, Heart } from "lucide-react";
+import { Globe, Heart, Handshake } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const VisionSection = () => {
   return (
@@ -17,6 +18,18 @@ const VisionSection = () => {
           <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-12">
             To build the <span className="text-white font-semibold">learning intelligence AI infrastructure</span> that understands how humans learn together and enables outcome-driven education at scale across platforms and institutions.
           </p>
+          
+          {/* Partner CTA */}
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-teal-dark text-primary-foreground px-8 py-6 text-lg mb-12"
+            asChild
+          >
+            <a href="mailto:rajeev@vygot.io">
+              <Handshake className="mr-2 h-5 w-5" />
+              Partner with Us
+            </a>
+          </Button>
           
           {/* Decorative element */}
           <div className="flex items-center justify-center gap-4">
