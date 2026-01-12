@@ -1,31 +1,26 @@
-import { GraduationCap, User, Users, Building } from "lucide-react";
+import { Building, GraduationCap, Wrench, Users } from "lucide-react";
 
 const EcosystemSection = () => {
   const stakeholders = [
     {
-      icon: GraduationCap,
-      title: "Students",
-      description: "Receive personalised learning journeys aligned to their Unique Learning Fingerprint."
-    },
-    {
-      icon: User,
-      title: "Teachers",
-      description: "Gain insight into teaching patterns and support for reflective growth."
-    },
-    {
-      icon: Users,
-      title: "Parents",
-      description: "Get clear visibility into progress, strengths, and challenges."
-    },
-    {
       icon: Building,
-      title: "Schools",
-      description: "Access classroom- and cohort-level intelligence for better academic decisions."
+      title: "Education Platforms",
+      description: "Embed adaptive learning intelligence without building complex learning systems in-house."
+    },
+    {
+      icon: GraduationCap,
+      title: "Schools & Institutions",
+      description: "Gain cohort-level insight into learning outcomes and intervention needs."
+    },
+    {
+      icon: Wrench,
+      title: "Learning System Builders",
+      description: "Power AI tutors, LMSs, and assessment tools with decision-grade learning intelligence."
     }
   ];
 
   return (
-    <section className="py-24 bg-secondary/30">
+    <section id="ecosystem" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
@@ -35,11 +30,11 @@ const EcosystemSection = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-8">
-              Built for the Ecosystem
+              Built for Education Systems
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {stakeholders.map((item, index) => (
               <div 
                 key={index} 

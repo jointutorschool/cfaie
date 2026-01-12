@@ -12,11 +12,11 @@ const MatchingSection = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-8">
-              Matching, Not Ideology
+              Fit, Not Ideology
             </h2>
             
             <p className="text-xl text-muted-foreground mb-12">
-              VYGOT™ does not assume one teaching style is best.
+              VYGOT™ does not assume one teaching style works for everyone.
             </p>
           </div>
           
@@ -26,7 +26,7 @@ const MatchingSection = () => {
                 <UserCheck className="w-6 h-6 text-primary" />
               </div>
               <p className="text-lg text-foreground">
-                Some learners thrive under <span className="font-semibold">facilitators</span>.
+                Some learners thrive under <span className="font-semibold">facilitation</span>.
               </p>
             </div>
             
@@ -35,14 +35,14 @@ const MatchingSection = () => {
                 <Users className="w-6 h-6 text-primary" />
               </div>
               <p className="text-lg text-foreground">
-                Others need <span className="font-semibold">structure-first instructors</span>.
+                Others require <span className="font-semibold">structured instruction</span>.
               </p>
             </div>
           </div>
           
           <div className="bg-teal-light rounded-2xl p-8 text-center">
             <p className="text-lg text-foreground">
-              The engine's role is <span className="font-semibold text-primary">fit</span>—continuously refined through outcome-driven feedback loops, not static preferences or ratings.
+              The engine's role is to identify and refine <span className="font-semibold text-primary">fit</span>—using outcome-driven feedback loops rather than static preferences, ratings, or assumptions.
             </p>
           </div>
         </div>

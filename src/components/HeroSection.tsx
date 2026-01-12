@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, ChevronDown } from "lucide-react";
+import { ArrowRight, Building, ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20 mb-10">
           <div className="w-2 h-2 rounded-full bg-primary" />
-          <span className="text-sm font-medium text-foreground/90">Learning Intelligence AI Engine</span>
+          <span className="text-sm font-medium text-foreground/90">Learning Intelligence AI Infrastructure</span>
         </div>
         
         <h1 className="text-7xl md:text-8xl lg:text-9xl font-heading font-bold mb-10 tracking-tight">
@@ -19,19 +19,13 @@ const HeroSection = () => {
         </h1>
         
         <div className="space-y-2 mb-8">
-          <p className="text-xl md:text-2xl text-foreground/70 font-medium">
-            Understand how students learn.
-          </p>
-          <p className="text-xl md:text-2xl text-foreground/70 font-medium">
-            Understand how teachers teach.
-          </p>
-          <p className="text-xl md:text-2xl text-foreground font-semibold">
-            Match them for better outcomes.
+          <p className="text-xl md:text-2xl text-foreground/90 font-medium">
+            An API-first engine that understands how learners learn and how instruction works—at scale.
           </p>
         </div>
         
         <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          VYGOT™ powers <span className="text-foreground font-semibold">Unique Learning Fingerprint</span>—a proprietary intelligence engine that models learner–teacher interactions to deliver truly personalised education, beyond content and test scores.
+          VYGOT™ is a proprietary learning intelligence engine that models learner–instructor interactions to deliver measurable learning outcomes, beyond content delivery, test scores, or one-size-fits-all personalisation.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
@@ -47,9 +41,10 @@ const HeroSection = () => {
             size="lg" 
             variant="outline" 
             className="border-primary/30 text-foreground hover:bg-primary/10 px-8 py-6 text-lg"
+            onClick={() => document.getElementById('ecosystem')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            <Play className="mr-2 h-4 w-4" />
-            See It in Action on TutorSchool
+            <Building className="mr-2 h-4 w-4" />
+            For Platforms & Institutions
           </Button>
         </div>
         

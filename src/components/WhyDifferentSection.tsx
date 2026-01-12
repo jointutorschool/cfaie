@@ -2,9 +2,9 @@ import { Check, Star } from "lucide-react";
 
 const WhyDifferentSection = () => {
   const differentiators = [
-    "Built on interaction-level data, not surface metrics",
-    "Encodes teaching-pattern intelligence most platforms ignore",
-    "Compounds accuracy through outcome-driven feedback loops",
+    "Built on instruction-level interaction data—not surface engagement metrics",
+    "Compounds intelligence through outcome-driven feedback loops",
+    "Encodes teaching-pattern signals most platforms ignore",
     "Grounded in learning science rather than heuristics"
   ];
 
@@ -19,7 +19,7 @@ const WhyDifferentSection = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-12">
-              Why VYGOT™ Is Different
+              Why VYGOT Is Different
             </h2>
           </div>
           
@@ -39,7 +39,7 @@ const WhyDifferentSection = () => {
           
           <div className="bg-navy rounded-2xl p-8 text-center">
             <p className="text-xl text-white font-medium">
-              VYGOT™ is not a feature. It is <span className="text-primary">learning intelligence infrastructure</span>.
+              VYGOT is not a feature. It is <span className="text-primary">learning intelligence infrastructure</span>.
             </p>
           </div>
         </div>

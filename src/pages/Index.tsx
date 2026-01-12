@@ -5,8 +5,9 @@ import UniqueLearningSection from "@/components/UniqueLearningSection";
 import WhatIsVygotSection from "@/components/WhatIsVygotSection";
 import HowVygotThinksSection from "@/components/HowVygotThinksSection";
 import MatchingSection from "@/components/MatchingSection";
+import CompoundIntelligenceSection from "@/components/CompoundIntelligenceSection";
+import DeploymentSection from "@/components/DeploymentSection";
 import TutorSchoolSection from "@/components/TutorSchoolSection";
-import BeyondTutoringSection from "@/components/BeyondTutoringSection";
 import EcosystemSection from "@/components/EcosystemSection";
 import WhyDifferentSection from "@/components/WhyDifferentSection";
 import VisionSection from "@/components/VisionSection";
@@ -22,11 +23,10 @@ const Index = () => {
       <WhatIsVygotSection />
       <HowVygotThinksSection />
       <MatchingSection />
+      <CompoundIntelligenceSection />
+      <DeploymentSection />
       <TutorSchoolSection />
-      <BeyondTutoringSection />
-      <section id="for-whom">
-        <EcosystemSection />
-      </section>
+      <EcosystemSection />
       <WhyDifferentSection />
       <VisionSection />
       <Footer />

@@ -1,15 +1,6 @@
-import { Check, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
 
 const TutorSchoolSection = () => {
-  const features = [
-    "Find the right tutor faster—based on learning and teaching fit, not guesswork",
-    "See real learning progress through transparent, data-driven insights",
-    "Benefit from adaptive learning paths that adjust content depth, difficulty, and pace",
-    "Receive early risk signals through predictive analytics before learning gaps widen",
-    "Access customised assessments that reveal strengths, weaknesses, and mastery gaps"
-  ];
-
   return (
     <section className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
@@ -21,40 +12,18 @@ const TutorSchoolSection = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-8">
-              Built into TutorSchool
+              Where VYGOT Operates Today
             </h2>
             
             <p className="text-xl text-muted-foreground mb-4">
-              Today, VYGOT™ powers <span className="text-foreground font-semibold">TutorSchool</span>, where parents and learners can:
+              VYGOT is live at <span className="text-foreground font-semibold">TutorSchool</span>—a real-world learning system that enables VYGOT to observe instruction, refine models, and harden learning intelligence.
             </p>
           </div>
           
-          <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 mb-8">
-            <ul className="space-y-4 mb-8">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-start gap-4">
-                  <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="w-4 h-4 text-primary-foreground" />
-                  </div>
-                  <span className="text-lg text-foreground">{feature}</span>
-                </li>
-              ))}
-            </ul>
-            
-            <p className="text-muted-foreground mb-6">
-              Once a learner–teacher match is established, VYGOT™ continuously refines the experience by recommending personalised learning pathways—aligning instruction, pacing, and remediation to the learner's Unique Learning DNA.
+          <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 text-center">
+            <p className="text-lg text-foreground leading-relaxed">
+              TutorSchool functions as an operational environment where authentic learning interactions continuously strengthen the engine deployed via APIs to platforms and institutions.
             </p>
-            
-            <p className="text-muted-foreground text-center">
-              VYGOT™ operates quietly in the background, using outcome-based intelligence loops to improve matching accuracy and learning effectiveness with every real interaction.
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <Button size="lg" className="bg-primary hover:bg-teal-dark text-primary-foreground px-8 py-6 text-lg">
-              Visit TutorSchool
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </Button>
           </div>
         </div>
       </div>

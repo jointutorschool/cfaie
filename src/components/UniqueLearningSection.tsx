@@ -11,11 +11,11 @@ const UniqueLearningSection = () => {
           </div>
           
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-8">
-            Introducing Unique Learning Fingerprint
+            From Content to Learning Intelligence
           </h2>
           
           <p className="text-xl text-muted-foreground mb-8">
-            Every learner has a unique way of understanding. Every teacher has a unique way of teaching.
+            True personalisation requires understanding learning behaviour, not just engagement.
           </p>
           
           <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 text-left">
@@ -25,7 +25,7 @@ const UniqueLearningSection = () => {
               </div>
               <div>
                 <p className="text-lg text-foreground leading-relaxed">
-                  <span className="font-semibold">Unique Learning Fingerprint</span> captures how students learn, how teachers teach, and how outcomes evolve across real learning interactions. This enables fit-based personalisation—replacing trial-and-error matching with data-driven alignment.
+                  VYGOT captures how learners respond to instruction, how teaching styles vary, and how outcomes evolve across real interactions. This enables fit-based decision-making—replacing trial-and-error approaches with data-driven learning intelligence grounded in how learning actually occurs.
                 </p>
               </div>
             </div>
