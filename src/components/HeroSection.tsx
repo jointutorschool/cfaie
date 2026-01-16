@@ -25,7 +25,7 @@ const HeroSection = () => {
         </div>
         
         <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          VYGOT™ is a proprietary learning intelligence engine that models learner–instructor interactions to deliver measurable learning outcomes, beyond content delivery, test scores, or one-size-fits-all personalisation.
+          VYGOT™ is a learning intelligence engine grounded in learning science, modeling learner–instructor interactions to drive measurable learning outcomes beyond content delivery and test scores.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
