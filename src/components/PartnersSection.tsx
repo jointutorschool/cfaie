@@ -1,13 +1,13 @@
 import { Handshake } from "lucide-react";
 import isbLogo from "@/assets/partner-isb-iventure.jpg";
 import nvidiaLogo from "@/assets/partner-nvidia-inception.png";
-import googleLogo from "@/assets/partner-google-startups.webp";
+import googleLogo from "@/assets/partner-google-startups.png";
 
 const PartnersSection = () => {
   const partners = [
-    { name: "ISB I-Venture", logo: isbLogo },
     { name: "NVIDIA Inception Program", logo: nvidiaLogo },
     { name: "Google for Startups Cloud Program", logo: googleLogo },
+    { name: "ISB I-Venture", logo: isbLogo },
   ];
 
   return (
