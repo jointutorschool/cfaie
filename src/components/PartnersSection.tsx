@@ -27,12 +27,12 @@ const PartnersSection = () => {
           {partners.map((p) => (
             <div
               key={p.name}
-              className="bg-card rounded-2xl p-8 shadow-card border border-border/50 flex items-center justify-center h-40"
+              className="bg-white rounded-2xl p-6 shadow-card border border-border/50 flex items-center justify-center h-32"
             >
               <img
                 src={p.logo}
                 alt={`${p.name} logo`}
-                className="max-h-24 max-w-full object-contain"
+                className="h-16 w-auto max-w-[80%] object-contain"
                 loading="lazy"
               />
             </div>
