@@ -10,9 +10,9 @@ const partners = [
 
 const PartnerLogos = ({ hidden = false }: { hidden?: boolean }) => (
   <div className="flex shrink-0 items-center gap-6 pr-6 md:gap-8 md:pr-8" aria-hidden={hidden || undefined}>
-    {partners.map((partner) => (
+    {[...partners, ...partners].map((partner, index) => (
       <div
-        key={partner.name}
+        key={`${partner.name}-${index}`}
         className="flex h-28 w-60 shrink-0 items-center justify-center rounded-lg border border-border/50 bg-card px-7 shadow-card md:h-32 md:w-72"
       >
         <img
