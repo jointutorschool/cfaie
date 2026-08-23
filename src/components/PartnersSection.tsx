@@ -1,42 +1,44 @@
-import { Handshake } from "lucide-react";
 import isbLogo from "@/assets/partner-isb-iventure.jpg";
 import nvidiaLogo from "@/assets/partner-nvidia-inception.png";
 import googleLogo from "@/assets/partner-google-startups.png";
 
+const partners = [
+  { name: "NVIDIA Inception Program", logo: nvidiaLogo },
+  { name: "Google for Startups Cloud Program", logo: googleLogo },
+  { name: "ISB I-Venture", logo: isbLogo },
+];
+
+const PartnerLogos = ({ hidden = false }: { hidden?: boolean }) => (
+  <div className="flex shrink-0 items-center gap-6 pr-6 md:gap-8 md:pr-8" aria-hidden={hidden || undefined}>
+    {[...partners, ...partners].map((partner, index) => (
+      <div
+        key={`${partner.name}-${index}`}
+        className="flex h-28 w-60 shrink-0 items-center justify-center rounded-lg border border-border/50 bg-card px-7 shadow-card md:h-32 md:w-72"
+      >
+        <img
+          src={partner.logo}
+          alt={hidden ? "" : `${partner.name} logo`}
+          className="h-16 w-full object-contain md:h-20"
+          loading="lazy"
+        />
+      </div>
+    ))}
+  </div>
+);
+
 const PartnersSection = () => {
-  const partners = [
-    { name: "NVIDIA Inception Program", logo: nvidiaLogo },
-    { name: "Google for Startups Cloud Program", logo: googleLogo },
-    { name: "ISB I-Venture", logo: isbLogo },
-  ];
-
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-light border border-primary/20 mb-6">
-            <Handshake className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Partners & Supporters</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
-            Our Partners & Supporters
-          </h2>
-        </div>
+    <section className="overflow-hidden bg-background py-16 md:py-20">
+      <div className="container mx-auto px-6 text-center">
+        <h2 className="mb-10 text-3xl font-heading font-bold text-foreground md:mb-12 md:text-4xl">
+          Proud Member of
+        </h2>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {partners.map((p) => (
-            <div
-              key={p.name}
-              className="bg-white rounded-2xl p-6 shadow-card border border-border/50 flex items-center justify-center h-32"
-            >
-              <img
-                src={p.logo}
-                alt={`${p.name} logo`}
-                className="h-16 w-auto max-w-[80%] object-contain"
-                loading="lazy"
-              />
-            </div>
-          ))}
+      <div className="group flex overflow-hidden" aria-label="Membership programs">
+        <div className="flex w-max animate-logo-marquee group-hover:[animation-play-state:paused] motion-reduce:animate-none">
+          <PartnerLogos />
+          <PartnerLogos hidden />
         </div>
       </div>
     </section>
