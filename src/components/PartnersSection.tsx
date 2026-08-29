@@ -1,11 +1,17 @@
 import isbLogo from "@/assets/partner-isb-iventure.jpg";
 import nvidiaLogo from "@/assets/partner-nvidia-inception.png";
 import googleLogo from "@/assets/partner-google-startups.png";
+import awsActivateLogo from "@/assets/aws-activate-logo.webp.asset.json";
+import iiitCieLogo from "@/assets/iiit-cie-logo.png.asset.json";
+import sarvamLogo from "@/assets/sarvam-logo.png.asset.json";
 
 const partners = [
   { name: "NVIDIA Inception Program", logo: nvidiaLogo },
   { name: "Google for Startups Cloud Program", logo: googleLogo },
   { name: "ISB I-Venture", logo: isbLogo },
+  { name: "AWS Activate", logo: awsActivateLogo.url },
+  { name: "IIIT CIE", logo: iiitCieLogo.url },
+  { name: "Sarvam", logo: sarvamLogo.url },
 ];
 
 const PartnerLogos = ({ hidden = false }: { hidden?: boolean }) => (
